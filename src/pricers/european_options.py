@@ -55,7 +55,7 @@ def european_opt_pricer(
         payoff_discounted = 0.5 * (payoff_discounted[:N//2] + payoff_discounted[N//2:])
         ST = 0.5 * (ST[:N//2] + ST[N//2:])
 
-    C = np.exp(-r*T) * np.mean(payoff)
+    C = np.mean(payoff_discounted)
 
     if control:
         discounted_ST = np.exp(-r*T) * ST
