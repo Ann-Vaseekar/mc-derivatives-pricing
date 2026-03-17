@@ -1,4 +1,4 @@
-# Monte Carlo Options Pricer
+# Options Pricer
 
-Use monte carlo simulations to price:
--  European Call Options
+Pricer for
+-  European Call Options (using MC simulations and Black-Scholes analytical solution
